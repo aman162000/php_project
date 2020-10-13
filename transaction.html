@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background-color: yellow;
+            font-family: sans-serif;
+            font-size: 50px;
+            text-align: center;
+        }
+        select{
+            font-size: 30px;
+        }
+        input[type=text]{
+            font-size: 30px;
+        }
+
+        button{
+            background-color: #ff3737;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 60px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .name{
+            padding: 65px;
+        }
+        .item{
+            padding: 65px;
+        }
+        .amount{
+            padding: 65px;
+        }
+    </style>
+</head>
+<body>
+<form method="get" action="transaction.php">
+    <div class="name">
+    <label for="names">Choose Name:</label>
+    <select id="names" name="names">
+        <option value="Bula Yadao">Bula Yadao</option>
+        <option value="Francesco Gartman">Francesco Gartman</option>
+        <option value="Maricruz Santelli">Maricruz Santelli</option>
+        <option value="Etha Fullilove">Etha Fullilove</option>
+        <option value="Kit Chirico">Kit Chirico</option>
+    </select>
+    </div>
+    <div class="item">
+    <label for="items">Choose Items:</label>
+    <select id="items" name="items">
+        <option value="Laptop">Laptop</option>
+        <option value="Television">Television</option>
+        <option value="Mobile">Mobile</option>
+        <option value="Tablet">Tablet</option>
+        <option value="Watch">Watch</option>
+    </select>
+    </div>
+    <div class="amount">
+    <label for = "amount">Amount:</label>
+    <input type="text" id="amount" name="amount">
+    </div>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
